@@ -1,6 +1,4 @@
-#div{
-  overflow:hidden;
-}
+
 
 .App {
   background-color: #e2eafc;
@@ -9,9 +7,5 @@
   height: 100vh;
   overflow:hidden;
   font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-
-.Comp{
-  margin:1rem;
 }
 

@@ -1,20 +1,17 @@
 import React from 'react'
-import '../App.css';
+import { Button } from 'react-bootstrap';
+import { Link } from "react-router-dom"; 
 
-import { ButtonGroup, Button } from '@mui/material';
 
 
 export const Header = () => { 
     return (
-
-
-        <div className="App" >
-            <ButtonGroup className="Comp" size="large" variant="contained" aria-label="outlined button group" >
-                <a href="./pages/home"><Button>About me</Button></a>
-                <Button>Videos</Button>
-                <Button>Blog</Button>
-            </ButtonGroup>
-        </div>
-
+        <>
+            <Button className="m-1" variant="outline-primary">asd</Button> 
+            <Button className="m-1" variant="outline-primary">asd</Button> 
+            <Button className="m-1"  variant="outline-primary">asd</Button> 
+            <Button className="m-1"  variant="outline-primary">asd</Button>                
+           
+        </>
     )
-}
+} 
