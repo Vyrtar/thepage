@@ -15,9 +15,9 @@ function App() {
       <Header />
           <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/videos" element={<Videos />} />
-          <Route path="/blogs" element={<Blogs />} />
+          <Route path="/Home" element={<Home />} />
+          <Route path="/Videos" element={<Videos />} />
+          <Route path="/Blogs" element={<Blogs />} />
         </Routes >
   </BrowserRouter>
   </div>

@@ -75,19 +75,19 @@ function Videos() {
             margin:1rem; 
             height:40vh;
             width:40vw;
-            transition:height 1s;
+            transition:height 0.2s;
             
-            transition: all 1s ease-out;
-            -webkit-transition: all 1s ease-out;
-            -moz-transition: all 1s ease-out;
-            -o-transition: all 1s ease-out;
+            transition: all 0.2s ease-out;
+            -webkit-transition: all 0.2s ease-out;
+            -moz-transition: all 0.2s ease-out;
+            -o-transition: all 0.2s ease-out;
            
         }
 
         .VideoCard:hover{
             background-color:#cdcccf;
             height: 60vh;
-            transition:1s;  
+            transition:0.2s;  
 
            
         }

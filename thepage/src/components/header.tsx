@@ -21,14 +21,21 @@ export const Header = () => {
                     .btn-header:hover{
                         background-color: #cdcccf;
                     }
+
+                    .Link{
+                        margin:1rem;
+                        text-decoration:none;
+                        color: black;
+                        margin:1rem;
+                    }
                     `}
                 </style>
 
             
             <ButtonGroup className="mb-3">
-                <Button href='/home' variant="header">Home</Button>
-                <Button href='/Blogs' variant="header">Blogs</Button>
-                <Button href='/Videos' variant="header">Videos</Button>
+                <Button variant="header"><Link className='Link' to='/Home'>Home</Link></Button>
+                <Button variant="header"><Link className='Link' to='/Blogs'>Blogs</Link></Button>
+                <Button variant="header"><Link className='Link' to='/Videos'>Videos</Link></Button>
             </ButtonGroup>
             </>
         </>
