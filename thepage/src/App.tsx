@@ -14,10 +14,10 @@ function App() {
     <BrowserRouter>
       <Header />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/Home" element={<Home />} />
-            <Route path="/Videos" element={<Videos />} />
-            <Route path="/Blogs" element={<Blogs />} />
+            <Route path="/thepage" element={<Home />} />
+            <Route path="/thepage/Home" element={<Home />} />
+            <Route path="/thepage/Videos" element={<Videos />} />
+            <Route path="/thepage/Blogs" element={<Blogs />} />
         </Routes >
   </BrowserRouter>
   </div>
