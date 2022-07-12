@@ -9,7 +9,7 @@ const VideoFramesList = [
 
     {
         url: "https://www.youtube.com/embed/VfMcCPPilaM",
-        title: "This F*cking Guy.",
+        title: "This F*cking Guy",
     },
     {
         url: "https://www.youtube.com/embed/Ap92rhiT5OE",
@@ -63,57 +63,60 @@ function Videos() {
     return (
         <>
             <style type="text/css">
-                {`
+            {`
 
-        .VideoCard {
-            
-            background-color: #ebebed;
-            color: black;
-            outline:black;
-            border-radius:8px;
-            padding:1rem;
-            margin:1rem; 
-            height:40vh;
-            width:40vw;
-            transition:height 0.2s;
-            
-            transition: all 0.2s ease-out;
-            -webkit-transition: all 0.2s ease-out;
-            -moz-transition: all 0.2s ease-out;
-            -o-transition: all 0.2s ease-out;
-           
-        }
+                .VideoCard {
+                    background-color: #ebebed;
+                    color: black;
+                    outline:black;
+                    border-radius:8px;
+                    padding:1rem;
+                    margin:1rem; 
+                    height:40vh;
+                    min-width:30rem;
+                    width:auto;
+                    transition:height 0.2s;
+                    
+                    transition: all 0.2s ease-out;
+                    -webkit-transition: all 0.2s ease-out;
+                    -moz-transition: all 0.2s ease-out;
+                    -o-transition: all 0.2s ease-out;
+                }
 
-        .VideoCard:hover{
-            background-color:#cdcccf;
-            height: 60vh;
-            transition:0.2s;  
+                .VideoCard:hover{
+                    background-color:#cdcccf;
+                    height: 85vh;
+                    width:85vw;
+                    transition:0.2s;  
 
-           
-        }
+                
+                }
 
-        .container{
-            justify-content:center;
-            display:flex;
-            flex-wrap:wrap;
-            width:100vw;
-        }
+                .container{
+                    
+                    display:flex;
+                    flex-direction: column;
+                    justify-content:center;
+                    align-items:center;
+                    width:100vw;
+                }
         
-        `}
+            `}
             </style>
-            
+
             <div className='container'>
                 {
-                    
+
                     VideoFramesList.map(video =>
                         <Card className="VideoCard">
                             <iframe width="100%" height="100%" src={video.url} frameBorder="0" allowFullScreen></iframe>
                             <hr />
                             {video.title}
+
                         </Card>
                     )
-                   
-                    }
+
+                }
             </div>
         </>
     );
