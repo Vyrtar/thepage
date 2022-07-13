@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button, ButtonGroup } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 export const Header = () => {
     return (
@@ -30,9 +31,10 @@ export const Header = () => {
 
             
             <ButtonGroup className="mb-3">
-                <Button href="/thepage/Home" variant="header">Home</Button>
-                <Button href="/thepage/Blogs" variant="header">Blogs</Button>
-                <Button href="/thepage/Videos" variant="header">Videos</Button>
+                <Link className="m-1" to='/Home'><Button variant="header">Home</Button></Link>
+                <Link className="m-1" to='/Blogs'><Button variant="header">Blogs</Button></Link>
+                <Link className="m-1" to='/Fotos'><Button variant="header">Fotos</Button></Link>
+                <Link className="m-1" to='/Videos'><Button variant="header">Videos</Button></Link>
             </ButtonGroup>
             </>
         </>
