@@ -9,7 +9,7 @@ function Blogs() {
   return (
   
     <div className='container'>
-        There will be blog Entries here at some point in the future...
+        There will be blog Entries here at some point in the future....
     </div>
   );
 }
