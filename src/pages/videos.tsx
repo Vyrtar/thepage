@@ -1,6 +1,6 @@
 import React from 'react';
 import '../App.css';
-import { Card, Row } from 'react-bootstrap';
+import { Card, Col, Row } from 'react-bootstrap';
 
 
 
@@ -73,6 +73,7 @@ function Videos() {
                     padding:1rem;
                     margin:1rem; 
                     height:40vh;
+                    min-height:20rem;
                     min-width:30rem;
                     width:auto;
                     transition:height 0.2s;
@@ -108,12 +109,16 @@ function Videos() {
                 {
 
                     VideoFramesList.map(video =>
+                        
                         <Card className="VideoCard">
+                            
                             <iframe width="100%" height="100%" src={video.url} frameBorder="0" allowFullScreen></iframe>
                             <hr />
                             {video.title}
-
+                            
                         </Card>
+                        
+                        
                     )
 
                 }
