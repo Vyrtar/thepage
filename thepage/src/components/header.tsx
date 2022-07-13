@@ -30,9 +30,9 @@ export const Header = () => {
 
             
             <ButtonGroup className="mb-3">
-                <Button href="/thepage/Home" variant="header">Home</Button>
-                <Button href="/thepage/Blogs" variant="header">Blogs</Button>
-                <Button href="/thepage/Videos" variant="header">Videos</Button>
+                <Button href="/Home" variant="header">Home</Button>
+                <Button href="/Blogs" variant="header">Blogs</Button>
+                <Button href="/Videos" variant="header">Videos</Button>
             </ButtonGroup>
             </>
         </>
